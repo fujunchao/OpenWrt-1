@@ -157,7 +157,7 @@ jobs:
         name: Toolchain-Image
         allowUpdates: true
         tag: ${{ env.TOOLCHAIN_TAG }}
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.ACCESS_TOKEN }}
         artifacts: output/*
         body: OpenWrt 工具链镜像文件
 
