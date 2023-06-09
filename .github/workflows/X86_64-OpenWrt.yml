@@ -144,7 +144,7 @@ jobs:
       if: steps.hash.outputs.REBUILD_TOOLCHAIN == 'true'
       uses: mknejp/delete-release-assets@v1
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets._TOKEN }}
         tag: ${{ env.TOOLCHAIN_TAG }}
         assets: '${{ env.TOOLCHAIN_IMAGE }}.*'
         fail-if-no-assets: false
